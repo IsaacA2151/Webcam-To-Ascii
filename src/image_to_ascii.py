@@ -5,7 +5,7 @@ class ToAscii:
 	def __init__(self,fileName=None,asciiWidth=None,width=None,height=None,PIL=False,frame=None):
 		self.PIL = PIL
 
-		self.brightness_chars = list('       _.,-=+:;cba!?0123456789$W#@Ñ')
+		self.brightness_chars = list(' _.,-=+:;cba!?0123456789$W#@Ñ')
 		self.thresholds = [(255/len(self.brightness_chars)) * i for i in range(len(self.brightness_chars))]
 
 		if self.PIL:
