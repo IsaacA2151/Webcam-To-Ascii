@@ -3,7 +3,7 @@ import image_to_ascii
 import sys, os
 
 WEB_IMG_STORE = "../imgs/webcam_feed"
-manage_imgs = True
+manage_imgs = True      # When set to True, images in the "../imgs/webcam_feed" directory will be automatically deleted while running
 
 if sys.platform == "linux":
     cap = cv2.VideoCapture(0)
