@@ -21,9 +21,6 @@ class ToAscii:
 			self.height = height
 			self.img = frame
 
-	def test(self):
-		print("YES")
-
 	def find_brightness_index(self,brightness):
 	    index = 0
 	    for i in range(0,len(self.thresholds)-1,1):
